@@ -1,54 +1,43 @@
 //%attributes = {}
-#DECLARE($flag : Integer)
+#DECLARE($params : Object)
 
-var $ps; $win : Integer
-var $options : Object
-var $cr : Text
+var $splashWindowTitle : Text
+$splashWindowTitle:=""
 
-Case of 
-	: (Count parameters:C259=0)
-		
-		If (Application version:C493<"1650")  // 16R5
-			ALERT:C41(Get localized string:C991("AlertVersionError"); "Quit")
-			QUIT 4D:C291
-		Else 
-			$ps:=New process:C317(Current method name:C684; 0; Current method name:C684; 0)
+If (Count parameters:C259=0)
+	
+	ARRAY LONGINT:C221($windows; 0)
+	WINDOW LIST:C442($windows)
+	
+	var $i; $window : Integer
+	For ($i; 1; Size of array:C274($windows))
+		$window:=$windows{$i}
+		If (Window process:C446($window)=1) && (Get window title:C450($window)=$splashWindowTitle)
+			var $x; $y; $bottom; $right : Integer
+			GET WINDOW RECT:C443($x; $y; $bottom; $right; $window)
+			CALL FORM:C1391($window; Formula:C1597(SET WINDOW RECT:C444($x; $y; $bottom; $right; $window)))
+			return 
 		End if 
-		
-	Else 
-		
-		$cr:=Char:C90(Carriage return:K15:38)
-		
-		If (Shift down:C543)  //  for debug purpose only
-			$win:=Open form window:C675("HDI"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
-		Else 
-			$win:=Open form window:C675("HDI"; Pop up form window:K39:11; Horizontally centered:K39:1; Vertically centered:K39:4)
-		End if 
-		
-		$options:=New object:C1471
-		
-		$options.title:=Get localized string:C991("HDITitle")
-		
-		$options.blog:="blog.4d.com"
-		$options.info:=Get localized string:C991("HDIInfo")  //ex : "4D View Pro feature"
-		
-		$options.minimumVersion:="1700"  // 1650 means 16R5   1601 means 16.1 (do not use !)
-		
-		//$options.license:=4D View license  // IF ANY NEEDED
-		//$options.license:=4D Write license  // IF ANY NEEDED
-		
-		DIALOG:C40("HDI"; $options)
-		CLOSE WINDOW:C154
-		
-		If ($options.quit=True:C214)
-			QUIT 4D:C291
-		Else 
-			
-			$win:=Open form window:C675("HDI2"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
-			DIALOG:C40("HDI2")
-			CLOSE WINDOW:C154
-			
-		End if 
-		
-End case 
+	End for 
+	
+	CALL WORKER:C1389(1; Current method name:C684; {})
+	
+Else 
+	
+	SET MENU BAR:C67(1)
+	
+	var $options : Object
+	$options:=New object:C1471
+	$options.title:=Localized string:C991("HDI_Title")
+	$options.blog:="blog.4d.com"
+	$options.info:=Localized string:C991("HDI_Info")
+	$options.minimumVersion:="1700"
+	//$options.license:=4D View license:K44:4  // uncomment if needed
+	//$options.license:=4D Write license:K44:2  // uncomment if needed
+	
+	$window:=Open form window:C675("HDI"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
+	SET WINDOW TITLE:C213($splashWindowTitle; $window)
+	DIALOG:C40("HDI"; $options; *)
+	
+End if 
 
