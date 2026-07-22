@@ -92,6 +92,50 @@ The "Fix c_object syntax error" session is the largest overspend: 3.3M input tok
 - **XLIFF localisation** -- complex multi-file task where the agent missed capitalised language codes and used wrong 4D command names. A plan review step would have caught scope issues and domain conventions before execution began.
 - **Modernise startup dialog** -- the 58-turn count suggests significant back-and-forth. An upfront plan could have reduced iteration by agreeing on the dialog lifecycle architecture first.
 
+Here's the comparison:
+
+---
+
+## ListBoxCollection (1st project — no instructions, all Opus 4.6)
+
+| | Input Tokens | Output Tokens | Turns | Sessions |
+|---|---:|---:|---:|---:|
+| Opus 4.6 | 27,054,284 | 133,109 | 454 | 10 |
+| **Total** | **27,054,284** | **133,109** | **454** | **10** |
+
+## FormData (2nd project — with instructions, mixed models)
+
+| | Input Tokens | Output Tokens | Turns | Sessions |
+|---|---:|---:|---:|---:|
+| Opus 4.6 | 17,339,027 | 93,158 | 262 | 8 |
+| Sonnet 5 | 5,470,567 | 36,156 | 106 | 6 |
+| **Total** | **22,809,594** | **129,314** | **368** | **14** |
+
+## Key Takeaways
+
+**Instructions saved ~16% total tokens and ~19% turns** despite FormData having *more sessions* (14 vs 10). The output volume was nearly identical (~130K), meaning the *useful work done* was the same — but the agent needed less context-loading to get there.
+
+### Head-to-head on comparable tasks:
+
+| Task | ListBox (no instructions) | FormData (with instructions) | Savings |
+|---|---|---|---|
+| XLIFF localisation | 4.79M / 80 turns | 2.24M / 40 turns | **53% fewer tokens, 50% fewer turns** |
+| Replace menu/quit | 1.42M / 23 turns (Opus) | 866K / 17 turns (Sonnet 5) | **39% fewer tokens, cheaper model** |
+| Hide subroutines | 860K / 17 turns (Opus) | 1.05M / 20 turns (Sonnet 5) | Similar tokens but **much cheaper model** |
+
+The XLIFF result is the standout — instructions cut the work in half.
+
+### What made instructions effective:
+1. **Model right-sizing** — Sonnet 5 handled mechanical tasks (menu wrappers, hide methods, README edits) that previously used Opus unnecessarily
+2. **Fewer corrections** — the ListBox README noted "19 turns of mid-stream corrections" for XLIFF; instructions preempted those mistakes (wrong 4D command names, missed requirements)
+3. **Learned patterns** — instruction files encoded 4D-specific knowledge (correct syntax, command names, file conventions) that the agent had to discover by trial-and-error the first time
+
+### How to make it even better next time:
+1. **Use plan mode for complex tasks** — XLIFF and dark mode still had many turns even with instructions. A plan review would catch scope issues before burning tokens on execution
+2. **Autopilot for mechanical work** — tasks like "hide subroutines" and "disable truncate ellipsis" are autopilot-ready with good instructions, saving interactive overhead
+3. **Shrink instruction scope** — some instruction files could include "skip these files" or "only touch these directories" to reduce the agent's search space and context loading
+4. **Add a 4D command reference snippet** — the biggest corrections were wrong command/function names; a small cheat-sheet in instructions would eliminate that class of error entirely
+
 ## Screenshots
 
 <img width="724" height="592" alt="Screenshot 2026-07-22 at 14 33 37" src="https://github.com/user-attachments/assets/59d8d63c-9265-4be2-adc0-d594be493ab0" />
