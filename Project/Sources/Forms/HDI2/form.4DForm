@@ -328,7 +328,7 @@
 					"top": 219,
 					"left": 562,
 					"width": 275,
-					"height": 32,
+					"height": 26,
 					"textAlign": "center",
 					"fontFamily": "Courier",
 					"fontSize": 13,
@@ -336,10 +336,10 @@
 				},
 				"Text5": {
 					"type": "text",
-					"top": 213,
+					"top": 219,
 					"left": 840,
 					"width": 278,
-					"height": 39,
+					"height": 26,
 					"textAlign": "center",
 					"fontFamily": "Courier",
 					"fontSize": 13,
@@ -405,7 +405,7 @@
 			}
 		}
 	],
-	"geometryStamp": 317,
+	"geometryStamp": 325,
 	"width": 1160,
 	"height": 670,
 	"$4d": {
