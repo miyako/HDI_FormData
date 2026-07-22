@@ -22,6 +22,26 @@ Each branch represents a distinct modernisation effort, guided by a correspondin
 | [`miyako-modernise-startup-dialog`](../../tree/miyako-modernise-startup-dialog) | Modernise the startup dialog pattern with form and object methods | [startup.instructions.md](.github/copilot/instructions/startup.instructions.md) |
 | [`miyako-dark-mode-support`](../../tree/miyako-dark-mode-support) | Add dark mode support with CSS stylesheets and macOS Tahoe Liquid Glass appearance | [css.instructions.md](.github/copilot/instructions/css.instructions.md), [tahoe.css.instructions.md](.github/copilot/instructions/tahoe.css.instructions.md), [listbox.instructions.md](.github/copilot/instructions/listbox.instructions.md) |
 
+## Copilot Token Usage
+
+Actual per-session token usage, pulled from Copilot session records.
+
+| Session | Branch | Model(s) | Input Tokens | Output Tokens | Turns |
+|---------|--------|----------|-------------:|--------------:|------:|
+| Add untracked project files | `miyako-glowing-funicular` | Claude Opus 4.6 | 376,155 | 996 | 7 |
+| Fix c_object syntax error | `miyako-fix-c-object-syntax-error` | Claude Opus 4.6 | 3,334,377 | 14,968 | 48 |
+| Add Branches section to README | `miyako-add-branches-to-readme` | Claude Sonnet 5 | 591,373 | 2,299 | 13 |
+| Sync main branches | *(no dedicated branch)* | Claude Opus 4.6, Claude Sonnet 5 | 821,737 | 2,919 | 22 |
+| Replace menu method wrappers | `miyako-replace-menu-method-wrappers` | Claude Sonnet 5 | 866,373 | 5,067 | 17 |
+| XLIFF localisation | `miyako-xliff-localization` | Claude Opus 4.6 | 2,238,032 | 14,665 | 40 |
+| Hide subroutines from Run Method dialog | `miyako-reimagined-umbrella` | Claude Sonnet 5 | 1,052,029 | 6,830 | 20 |
+| Modernise startup dialog | `miyako-modernise-startup-dialog` | Claude Opus 4.6 | 5,239,027 | 23,743 | 58 |
+| Dark mode support | `miyako-dark-mode-support` | Claude Opus 4.6 | 3,562,636 | 17,024 | 48 |
+| Update README branches (chat) | *(no dedicated branch)* | Claude Opus 4.6 | 863,169 | 6,100 | 24 |
+| Update Branches table | `miyako-update-readme-branches-table` | Claude Sonnet 5 | 608,436 | 3,399 | 13 |
+| Add token usage section | `miyako-supreme-fiesta` | Claude Sonnet 5 | 1,059,388 | 6,008 | 21 |
+| **Total** | | | **20,612,732** | **104,018** | **331** |
+
 ## Model Selection Assessment
 
 Every session in this project used either **Claude Opus 4.6** or **Claude Sonnet 5**. The table below reviews each session against the actual task complexity to assess whether the model choice was cost-effective.
@@ -71,3 +91,9 @@ The "Fix c_object syntax error" session is the largest overspend: 3.3M input tok
 **Plan mode would have helped with:**
 - **XLIFF localisation** -- complex multi-file task where the agent missed capitalised language codes and used wrong 4D command names. A plan review step would have caught scope issues and domain conventions before execution began.
 - **Modernise startup dialog** -- the 58-turn count suggests significant back-and-forth. An upfront plan could have reduced iteration by agreeing on the dialog lifecycle architecture first.
+
+## Screenshots
+
+<img width="724" height="592" alt="Screenshot 2026-07-22 at 14 33 37" src="https://github.com/user-attachments/assets/59d8d63c-9265-4be2-adc0-d594be493ab0" />
+<img width="1160" height="702" alt="Screenshot 2026-07-22 at 14 33 47" src="https://github.com/user-attachments/assets/b49c1b8d-cb7f-45cc-8577-4f8d91494657" />
+<img width="1160" height="702" alt="Screenshot 2026-07-22 at 14 33 55" src="https://github.com/user-attachments/assets/a3ba8131-997c-4a7b-8669-b62a9bce7dc7" />
