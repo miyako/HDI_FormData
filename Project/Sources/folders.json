@@ -37,8 +37,7 @@
 			"Localization"
 		],
 		"methods": [
-			"00_Start",
-			"m_Quit"
+			"00_Start"
 		]
 	},
 	"trash": {}
