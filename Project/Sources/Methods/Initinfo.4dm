@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 // ----------------------------------------------------
 // Nom utilisateur (OS) : fmainguene
 // Date et heure : 01/08/17, 11:57:42
