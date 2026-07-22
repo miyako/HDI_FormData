@@ -274,7 +274,7 @@ Reference: [Simplified commands for cleaner codebase](https://blog.4d.com/simpli
 
 > **Mistake to avoid:** Do not use `Get localized string` in projects with `compatibilityVersion >= 2070`. Use `Localized string` instead.
 
-The command token (e.g. `:C991`) remains the same regardless of version and must always be appended to the command name in `.4dm` files.
+The command token (e.g. `:C991`) remains the same regardless of version. However, **token suffixes are optional** — plain command names work correctly and 4D adds tokens automatically on save. Never invent or guess token numbers; an incorrect token silently resolves to the wrong command. If unsure, omit the token entirely.
 
 ---
 

@@ -226,7 +226,9 @@ When a listbox uses `"metaSource"` to dynamically style rows/cells with fill col
 
 ## 4D Method Token Reference
 
-When writing 4D methods with tokenised syntax (`:Cnnn`), use the correct command numbers:
+4D project mode source files may include token syntax (`:Cnnn` suffixes on commands). These tokens are **optional** — plain command names work correctly and 4D adds tokens automatically when it saves the file. **Never invent or guess token numbers**; an incorrect token silently resolves to the wrong command, causing hard-to-diagnose runtime errors. If unsure of a token, omit it entirely.
+
+Known correct tokens (for reference only — omitting them is always safe):
 
 | Command | Token | Notes |
 |---------|-------|-------|
@@ -234,7 +236,7 @@ When writing 4D methods with tokenised syntax (`:Cnnn`), use the correct command
 | `New object` | `:C1471` | Create a new object |
 | `Form` | `:C1466` | Access the form data object |
 
-**Common mistake**: `:C382` is `_O_REDRAW LIST` (obsolete), not `OBJECT GET RGB COLORS`. Always verify command tokens against the 4D documentation.
+**Common mistake**: `:C382` is `_O_REDRAW LIST` (obsolete), not `OBJECT GET RGB COLORS`. This is exactly why guessing tokens is dangerous — always verify against existing project code or omit the token.
 
 Command reference: https://developer.4d.com/docs/commands/
 
