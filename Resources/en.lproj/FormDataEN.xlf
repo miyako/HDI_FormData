@@ -153,18 +153,6 @@ Any property of this object will then be available from within the form context 
 <source>When you update the Label object, the subform is updated automatically </source>
 <target>When you update the Label object, the subform is updated automatically </target>
 </trans-unit>
-<trans-unit id="19" resname="TabDescription">
-<source>Description</source>
-<target>Description</target>
-</trans-unit>
-<trans-unit id="20" resname="TabDialog">
-<source>DIALOG</source>
-<target>DIALOG</target>
-</trans-unit>
-<trans-unit id="21" resname="TabSubform">
-<source>Subform</source>
-<target>Subform</target>
-</trans-unit>
 </group>
 <group resname="Edit_Address">
 <trans-unit id="1" resname="Button1">
@@ -209,6 +197,20 @@ Any property of this object will then be available from within the form context 
 </trans-unit>
 </group>
 </group>
+
+        <!-- ID-based XLIFF resources -->
+<trans-unit resname="TabDescription">
+<source>Description</source>
+<target>Description</target>
+</trans-unit>
+<trans-unit resname="TabDialog">
+<source>DIALOG</source>
+<target>DIALOG</target>
+</trans-unit>
+<trans-unit resname="TabSubform">
+<source>Subform</source>
+<target>Subform</target>
+</trans-unit>
 
 
 
