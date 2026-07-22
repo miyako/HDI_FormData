@@ -1,6 +1,4 @@
 //%attributes = {}
-$l:=Localized string:C991("AlertVersionError")
-
 // ----------------------------------------------------
 // Nom utilisateur (OS) : fmainguene
 // Date et heure : 01/08/17, 11:57:42
