@@ -8,3 +8,11 @@ This project started as a binary `.4DB` example database originally distributed 
 
 - **Blog post:** [Passing data back and forth between forms](https://blog.4d.com/passing-data-back-and-forth-between-forms/)
 - **Original download:** [HDI_FormData.zip](https://download.4d.com/Demos/4D_v16_R5/HDI_FormData.zip)
+
+## Branches
+
+Each branch represents a distinct modernisation effort, guided by a corresponding Copilot instruction file.
+
+| Branch | Description | Instructions |
+|--------|-------------|--------------|
+| [`miyako-fix-c-object-syntax-error`](../../tree/miyako-fix-c-object-syntax-error) | Replace deprecated `C_*` declarations with modern `var` / `#DECLARE` syntax and fix `C_OBJECT` syntax errors | [variable.declarations.instructions.md](.github/copilot/instructions/variable.declarations.instructions.md) |
