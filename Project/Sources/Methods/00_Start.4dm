@@ -1,8 +1,9 @@
 //%attributes = {}
-C_LONGINT:C283($1)
-C_LONGINT:C283($ps; $win)
-C_OBJECT:C1216($options)
-C_TEXT:C284($cr)
+#DECLARE($1 : Integer)
+
+var $ps; $win : Integer
+var $options : Object
+var $cr : Text
 
 Case of 
 	: (Count parameters:C259=0)

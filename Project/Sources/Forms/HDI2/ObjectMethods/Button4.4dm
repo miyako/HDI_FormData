@@ -1,4 +1,4 @@
-C_LONGINT:C283($win)
+var $win : Integer
 
 // 前回の結果を隠します
 OBJECT SET VISIBLE:C603(*; "RES@"; False:C215)
