@@ -8,6 +8,8 @@
 // Initialization of the information message
 // ----------------------------------------------------
 
-QUERY:C277([Samples:4]; [Samples:4]ID:1=1)
-
-TextInfo:=[Samples:4]Label:2
+var $json : Collection
+$json:=JSON Parse:C1218(File:C1566(Localized document path:C1105("Samples.json"); fk platform path:K87:2).getText())
+var $sample : Object
+$sample:=$json.query("ID == :1"; 1).first()
+TextInfo:=$sample.Label

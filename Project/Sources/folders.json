@@ -1,13 +1,5 @@
 {
-	"BD": {
-		"tables": [
-			"Samples"
-		],
-		"forms": [
-			"[Samples]Input",
-			"[Samples]Output"
-		]
-	},
+	"BD": {},
 	"FORMS": {
 		"groups": [
 			"BD"
