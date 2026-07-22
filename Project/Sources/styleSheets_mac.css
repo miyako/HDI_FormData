@@ -24,3 +24,15 @@
 	font-weight: bold;
 }
 
+@media (form-theme: liquid-glass) {
+	button.default, button.default1 {
+		height: 27px;
+	}
+}
+
+@media (form-theme: mac-classic) {
+	button.default, button.default1 {
+		height: 23px;
+	}
+}
+

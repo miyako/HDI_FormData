@@ -39,8 +39,6 @@ Case of
 				If ($r#"0")
 					$version:=$version+" R"+$r
 					
-					// icon
-					
 					$format:=OBJECT Get format:C894(*; "Icon4D")
 					$format:=Replace string:C233($format; "4D.png"; "4DR.png")
 					OBJECT SET FORMAT:C236(*; "Icon4D"; $format)
@@ -55,7 +53,7 @@ Case of
 			If (Application version:C493<Form:C1466.minimumVersion)
 				
 				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Quit 4D")
+				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string:C991("BtnClose"))
 				
 				$maintext:=OBJECT Get title:C1068(*; "ErrorMainText")
 				$maintext:=Replace string:C233($maintext; "{version}"; $version)
@@ -74,17 +72,17 @@ Case of
 			If (Not:C34(Is license available:C714(Form:C1466.license)))
 				
 				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Quit 4D")
+				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string:C991("BtnClose"))
 				
 				Case of 
 						
 					: (Form:C1466.license=4D View license:K44:4)
-						$maintext:="Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature."
-						$subtext:="You must have a valid 4D View Pro license to continue."
+						$maintext:=Localized string:C991("ErrorViewProMain")
+						$subtext:=Localized string:C991("ErrorViewProSub")
 						
 					: (Form:C1466.license=4D Write license:K44:2)
-						$maintext:="Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature."
-						$subtext:="You must have a valid 4D Write Pro license to continue."
+						$maintext:=Localized string:C991("ErrorWriteProMain")
+						$subtext:=Localized string:C991("ErrorWriteProSub")
 						
 				End case 
 				
