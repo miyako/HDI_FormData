@@ -59,3 +59,9 @@ All sessions used **Claude Opus 4.6** via GitHub Copilot.
 **Plan mode would have helped with:**
 - **XLIFF localisation** — complex multi-file task where the agent missed capitalised language codes and used wrong command names. A plan review would have caught scope issues before execution.
 
+## Screenshots
+
+<img width="724" height="592" alt="Screenshot 2026-07-22 at 14 33 37" src="https://github.com/user-attachments/assets/59d8d63c-9265-4be2-adc0-d594be493ab0" />
+<img width="1160" height="702" alt="Screenshot 2026-07-22 at 14 33 47" src="https://github.com/user-attachments/assets/b49c1b8d-cb7f-45cc-8577-4f8d91494657" />
+<img width="1160" height="702" alt="Screenshot 2026-07-22 at 14 33 55" src="https://github.com/user-attachments/assets/a3ba8131-997c-4a7b-8669-b62a9bce7dc7" />
+
