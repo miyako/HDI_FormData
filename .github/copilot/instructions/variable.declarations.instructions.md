@@ -105,8 +105,9 @@ C_TEXT:C284($2)
 
 **Key points:**
 - `#DECLARE` must be the first non-comment, non-attribute line in the method.
-- Give parameters meaningful names instead of `$1`, `$2`.
+- **Numbered parameters (`$1`, `$2`, `$0`) are illegal in `#DECLARE`** — you must assign a named local variable (e.g., `$param1`, `$flag`).
 - `#DECLARE` replaces **all** `C_*($N)` declarations for that method.
+- For variadic methods, use `#DECLARE(... : Type)` with `Count parameters` and `${N}` notation, or `Copy parameters` to forward arguments to another method.
 
 ### Rule 3: Return Values — `C_*($0)` → `#DECLARE` return syntax
 
@@ -192,6 +193,31 @@ C_LONGINT:C283($1)   // WRONG — conflicts with #DECLARE
 ```
 
 **Why:** `#DECLARE` replaces all `C_*` parameter declarations. Having both creates a conflict. Remove all `C_*($N)` lines when `#DECLARE` is present.
+
+### ❌ Using numbered parameters in `#DECLARE`
+
+```4d
+#DECLARE($1 : Integer)   // WRONG — $1 is illegal in #DECLARE
+```
+
+**Why:** `#DECLARE` requires named local variables, not numbered parameters (`$1`, `$2`, `$0`). Numbered parameters are a legacy concept from `C_*` declarations. Use a descriptive name instead:
+
+```4d
+#DECLARE($flag : Integer)   // CORRECT
+```
+
+For variadic methods where you need numbered access, use the spread syntax:
+
+```4d
+#DECLARE(... : Real) : Real
+var $i; $total : Real
+For ($i; 1; Count parameters:C259)
+    $total+=${$i}
+End for
+return $total
+```
+
+Or use `Copy parameters` to forward arguments to another method.
 
 ### ❌ Forgetting to remove `$0:=` assignments
 
