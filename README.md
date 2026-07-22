@@ -42,9 +42,58 @@ Actual per-session token usage, pulled from Copilot session records.
 | Add token usage section | `miyako-supreme-fiesta` | Claude Sonnet 5 | 1,059,388 | 6,008 | 21 |
 | **Total** | | | **20,612,732** | **104,018** | **331** |
 
+## Model Selection Assessment
+
+Every session in this project used either **Claude Opus 4.6** or **Claude Sonnet 5**. The table below reviews each session against the actual task complexity to assess whether the model choice was cost-effective.
+
+### Sessions where model choice was appropriate
+
+These sessions used a model that matched the task complexity.
+
+| Session | Model | Turns | Task | Why it fits |
+|---------|-------|------:|------|-------------|
+| Replace menu wrappers | Sonnet 5 | 17 | Mechanical refactor guided by instructions | Pattern-based replacement -- no deep reasoning needed |
+| Hide subroutines | Sonnet 5 | 20 | Targeted property edits on method files | Well-scoped, single-concern edit |
+| Add Branches section | Sonnet 5 | 13 | README text editing | Simple documentation task |
+| Update Branches table | Sonnet 5 | 13 | Table update | Formulaic content insertion |
+| Add token usage section | Sonnet 5 | 21 | Data entry and formatting | Straightforward markdown authoring |
+| XLIFF localisation | Opus 4.6 | 40 | Multi-file XML generation with 4D-specific conventions | Cross-file reasoning, domain-specific edge cases (capitalised language codes, XLIFF structure) |
+| Modernise startup dialog | Opus 4.6 | 58 | Architectural redesign of dialog lifecycle | Design decisions about form/object method decomposition; highest complexity in the project |
+
+### Sessions where Opus was likely overkill
+
+These sessions used Opus 4.6 for tasks that Sonnet 5 (or even Haiku 4.5) could handle, representing avoidable token spend.
+
+| Session | Model | Turns | Input Tokens | Task | Recommended model |
+|---------|-------|------:|-------------:|------|-------------------|
+| Add untracked project files | Opus 4.6 | 7 | 376,155 | `git add` and commit | Haiku 4.5 -- trivial file operations |
+| Fix c_object syntax error | Opus 4.6 | 48 | 3,334,377 | Replace `C_*` declarations with `var`/`#DECLARE` | Sonnet 5 -- mechanical find-and-replace refactor |
+| Sync main branches | Opus 4.6 + Sonnet 5 | 22 | 821,737 | Git fetch, merge, push | Sonnet 5 -- git operations need no deep reasoning |
+| Update README branches (chat) | Opus 4.6 | 24 | 863,169 | Edit README text | Sonnet 5 -- plain text editing |
+
+The "Fix c_object syntax error" session is the largest overspend: 3.3M input tokens on Opus for what amounts to a pattern-based replacement task with clear instruction files.
+
+### Borderline -- Sonnet 5 probably sufficient
+
+| Session | Model | Turns | Task | Notes |
+|---------|-------|------:|------|-------|
+| Dark mode support | Opus 4.6 | 48 | CSS stylesheets + macOS Tahoe Liquid Glass | Sonnet handles CSS/UI well, but Liquid Glass is a very new API and may benefit from Opus's broader training. Borderline call. |
+
+### Mode Selection Guidance
+
+**Interactive mode was the right choice for most sessions.** Many sessions had mid-stream corrections -- wrong 4D command names, missed requirements, or URL fixes. The XLIFF session (40 turns), modernise startup dialog (58 turns), and dark mode session (48 turns) all needed real-time steering that autopilot would not have handled.
+
+**With documented instruction files, these task types are now autopilot-ready:**
+- Mechanical refactors with clear specs (variable declarations, menu wrappers, method visibility)
+- README/documentation updates (branches table, token usage sections)
+- Git housekeeping (adding files, syncing branches)
+
+**Plan mode would have helped with:**
+- **XLIFF localisation** -- complex multi-file task where the agent missed capitalised language codes and used wrong 4D command names. A plan review step would have caught scope issues and domain conventions before execution began.
+- **Modernise startup dialog** -- the 58-turn count suggests significant back-and-forth. An upfront plan could have reduced iteration by agreeing on the dialog lifecycle architecture first.
+
 ## Screenshots
 
 <img width="724" height="592" alt="Screenshot 2026-07-22 at 14 33 37" src="https://github.com/user-attachments/assets/59d8d63c-9265-4be2-adc0-d594be493ab0" />
 <img width="1160" height="702" alt="Screenshot 2026-07-22 at 14 33 47" src="https://github.com/user-attachments/assets/b49c1b8d-cb7f-45cc-8577-4f8d91494657" />
 <img width="1160" height="702" alt="Screenshot 2026-07-22 at 14 33 55" src="https://github.com/user-attachments/assets/a3ba8131-997c-4a7b-8669-b62a9bce7dc7" />
-
