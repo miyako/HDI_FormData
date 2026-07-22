@@ -1,0 +1,45 @@
+{
+	"BD": {
+		"tables": [
+			"Samples"
+		],
+		"forms": [
+			"[Samples]Input",
+			"[Samples]Output"
+		]
+	},
+	"FORMS": {
+		"groups": [
+			"BD"
+		],
+		"forms": [
+			"Edit_Address",
+			"Edit_Address_Example2",
+			"HDI",
+			"HDI2"
+		]
+	},
+	"Init": {
+		"methods": [
+			"Initinfo",
+			"New_Addresses"
+		]
+	},
+	"Localization": {
+		"methods": [
+			"Address_EN",
+			"Address_FR"
+		]
+	},
+	"METHODS": {
+		"groups": [
+			"Init",
+			"Localization"
+		],
+		"methods": [
+			"00_Start",
+			"m_Quit"
+		]
+	},
+	"trash": {}
+}

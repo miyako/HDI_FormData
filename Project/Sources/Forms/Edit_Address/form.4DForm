@@ -1,0 +1,263 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 520,
+	"windowMinHeight": 420,
+	"width": 520,
+	"height": 420,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onDataChange",
+		"onBoundVariableChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 92,
+					"left": 230,
+					"width": 250,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.CompanyName",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 127,
+					"left": 230,
+					"width": 250,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.LastName",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 162,
+					"left": 230,
+					"width": 250,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.FirstName",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 197,
+					"left": 230,
+					"width": 250,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.AddressLine1",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 232,
+					"left": 230,
+					"width": 250,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.AddressLine2",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 267,
+					"left": 230,
+					"width": 250,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.ZipCode",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 302,
+					"left": 230,
+					"width": 250,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.City",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 337,
+					"left": 230,
+					"width": 250,
+					"height": 17,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.Country",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 380,
+					"left": 410,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Buttons_14",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 91,
+					"left": 40,
+					"width": 180,
+					"height": 17,
+					"textAlign": "right",
+					"fontTheme": "main",
+					"fontWeight": "bold",
+					"text": "Company"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 125,
+					"left": 70,
+					"width": 150,
+					"height": 16,
+					"textAlign": "right",
+					"fontTheme": "main",
+					"fontWeight": "bold",
+					"text": "LastName"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 160,
+					"left": 70,
+					"width": 150,
+					"height": 16,
+					"textAlign": "right",
+					"fontTheme": "main",
+					"fontWeight": "bold",
+					"text": "FirstName"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 195,
+					"left": 70,
+					"width": 150,
+					"height": 16,
+					"textAlign": "right",
+					"fontTheme": "main",
+					"fontWeight": "bold",
+					"text": "AddressLine1"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 230,
+					"left": 70,
+					"width": 150,
+					"height": 16,
+					"textAlign": "right",
+					"fontTheme": "main",
+					"fontWeight": "bold",
+					"text": "AddressLine2"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 265,
+					"left": 70,
+					"width": 150,
+					"height": 16,
+					"textAlign": "right",
+					"fontTheme": "main",
+					"fontWeight": "bold",
+					"text": "ZipCode"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 301,
+					"left": 70,
+					"width": 150,
+					"height": 16,
+					"textAlign": "right",
+					"fontTheme": "main",
+					"fontWeight": "bold",
+					"text": "City"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 335,
+					"left": 70,
+					"width": 150,
+					"height": 16,
+					"textAlign": "right",
+					"fontTheme": "main",
+					"fontWeight": "bold",
+					"text": "Country"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 480,
+					"height": 48,
+					"fontTheme": "main",
+					"text": "Thanks to the new Form command, the object passed in the parameter to the DIALOG command will be updated with the values entered by the user."
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,422 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 1120,
+					"height": 630,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "TabControl",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"説明",
+						"DIALOG",
+						"サブフォーム"
+					],
+					"action": "GotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"TextInfo": {
+					"type": "input",
+					"top": 108,
+					"left": 267,
+					"width": 618,
+					"height": 449,
+					"dataSource": "TextInfo",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "groupBox",
+					"top": 216,
+					"left": 376,
+					"width": 374,
+					"height": 351,
+					"textAlign": "left",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Edit_Address Form (in design)"
+				},
+				"InvoiceAddressDisplay1": {
+					"type": "input",
+					"top": 230,
+					"left": 49,
+					"width": 234,
+					"height": 157,
+					"dataSource": "InvoiceAddress1",
+					"dataSourceTypeHint": "object",
+					"fontFamily": "courier",
+					"fontSize": 11,
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 147,
+					"left": 230,
+					"width": 210,
+					"height": 49,
+					"textAlign": "center",
+					"fontStyle": "italic",
+					"text": "The object is passed to the DIALOG command"
+				},
+				"Picture51": {
+					"type": "picture",
+					"top": 254,
+					"left": 405,
+					"width": 326,
+					"height": 287,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture51.png"
+				},
+				"InvoiceAddressDisplay2": {
+					"type": "input",
+					"top": 425,
+					"left": 49,
+					"width": 234,
+					"height": 157,
+					"dataSource": "InvoiceAddress2",
+					"dataSourceTypeHint": "object",
+					"fontFamily": "courier",
+					"fontSize": 11,
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 201,
+					"left": 49,
+					"width": 126,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Invoice Address #1"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 396,
+					"left": 49,
+					"width": 126,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Invoice Address #2"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 405,
+					"left": 257,
+					"width": 150,
+					"height": 151,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.png"
+				},
+				"Button3": {
+					"type": "button",
+					"top": 587,
+					"left": 582,
+					"width": 148,
+					"height": 26,
+					"text": "Edit Address #2",
+					"fontWeight": "bold",
+					"stroke": "#89C705",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 587,
+					"left": 396,
+					"width": 148,
+					"height": 26,
+					"text": "Edit Address #1",
+					"fontWeight": "bold",
+					"stroke": "#FF9300",
+					"focusable": false,
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RES_object": {
+					"type": "input",
+					"top": 309,
+					"left": 835,
+					"width": 294,
+					"height": 157,
+					"visibility": "hidden",
+					"dataSource": "Result",
+					"dataSourceTypeHint": "object",
+					"fontFamily": "courier",
+					"fontSize": 11,
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"RES2_Arrow": {
+					"type": "picture",
+					"top": 309,
+					"left": 725,
+					"width": 150,
+					"height": 151,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "Images/RES2_Arrow.png"
+				},
+				"RES_label": {
+					"type": "text",
+					"top": 265,
+					"left": 835,
+					"width": 218,
+					"height": 36,
+					"visibility": "hidden",
+					"fontWeight": "bold",
+					"text": "Updated object after modification by the user in the dialog"
+				},
+				"Picture56": {
+					"type": "picture",
+					"top": 235,
+					"left": 257,
+					"width": 150,
+					"height": 150,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture56.png"
+				},
+				"RES1_Arrow": {
+					"type": "picture",
+					"top": 305,
+					"left": 722,
+					"width": 150,
+					"height": 150,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "Images/RES1_Arrow.png"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 82,
+					"left": 149,
+					"width": 854,
+					"height": 55,
+					"fontFamily": "System Font",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"text": "It’s now possible to pass parameters in an object to a form using the DIALOG command. \rAny property of this object will then be available from within the form context via the Form command."
+				},
+				"RES_Text": {
+					"type": "text",
+					"top": 486,
+					"left": 838,
+					"width": 286,
+					"height": 65,
+					"visibility": "hidden",
+					"textAlign": "automatic",
+					"fontStyle": "italic",
+					"text": "When the users close the dialog, the values they entered are available in the calling method via the object passed in parameter."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Sous formulaire2": {
+					"type": "subform",
+					"top": 194,
+					"left": 49,
+					"width": 503,
+					"height": 440,
+					"dataSource": "InvoiceAddress",
+					"detailForm": "Edit_Address_Example2",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "system"
+				},
+				"Bouton image": {
+					"type": "button",
+					"top": 129,
+					"left": 632,
+					"width": 135,
+					"height": 77,
+					"focusable": false,
+					"icon": "/RESOURCES/Countries/France_Flag.png",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/Bouton image.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton image1": {
+					"type": "button",
+					"top": 131,
+					"left": 912,
+					"width": 135,
+					"height": 77,
+					"focusable": false,
+					"icon": "/RESOURCES/Countries/USA_Flag.png",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/Bouton image1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 80,
+					"left": 733,
+					"width": 214,
+					"height": 49,
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Click on flags to change language in subforms:"
+				},
+				"Text": {
+					"type": "text",
+					"top": 219,
+					"left": 562,
+					"width": 275,
+					"height": 32,
+					"textAlign": "center",
+					"fontFamily": "Courier",
+					"fontSize": 13,
+					"text": "InvoiceAddress.Label:=Address_FR \r"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 213,
+					"left": 840,
+					"width": 278,
+					"height": 39,
+					"textAlign": "center",
+					"fontFamily": "Courier",
+					"fontSize": 13,
+					"text": "InvoiceAddress.Label:=Address_EN \r "
+				},
+				"Text7": {
+					"type": "text",
+					"top": 155,
+					"left": 49,
+					"width": 544,
+					"height": 19,
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"text": "InvoiceAddress is accessible in the subform using the Form command"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 122,
+					"left": 49,
+					"width": 536,
+					"height": 14,
+					"textAlign": "left",
+					"fontTheme": "main",
+					"text": "InvoiceAddress is a C_Object variable bound to the subform below"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 339,
+					"left": 569,
+					"width": 324,
+					"height": 15,
+					"textAlign": "left",
+					"fontTheme": "main",
+					"text": "InvoiceAddress object content:"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 252,
+					"left": 717,
+					"width": 246,
+					"height": 49,
+					"textAlign": "center",
+					"fontTheme": "main",
+					"text": "When you update the Label object, the subform is updated automatically "
+				},
+				"InvoiceAddressDisplay": {
+					"type": "input",
+					"top": 364,
+					"left": 569,
+					"width": 543,
+					"height": 270,
+					"dataSource": "InvoiceAddress",
+					"dataSourceTypeHint": "object",
+					"fontFamily": "courier",
+					"fontSize": 11,
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"bottom": 634
+				}
+			}
+		}
+	],
+	"geometryStamp": 313,
+	"width": 1160,
+	"height": 670,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

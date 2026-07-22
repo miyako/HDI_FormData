@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_FormData" uuid="89D3E6F80FA9EA408A0E251A8569EC50" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Samples" uuid="5BB7B1E3D312234EAEBA86652DAEB234" id="4">
+		<field name="ID" uuid="D974F54495C8DB40BFE754BF796900BE" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Label" uuid="5DC4D5B52F29E14BBFBB159734C39380" type="10" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="D974F54495C8DB40BFE754BF796900BE"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="954E19470A7A324DB1F246A3891AC2B4" type="7">
+		<field_ref uuid="D974F54495C8DB40BFE754BF796900BE" name="ID">
+			<table_ref uuid="5BB7B1E3D312234EAEBA86652DAEB234" name="Samples"/>
+		</field_ref>
+	</index>
+	<base_extra data_file_path=":HowDoI.4DD" package_name="HDI_FormData" structure_file_name="HowDoI">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

@@ -1,0 +1,482 @@
+{
+	"destination": "detailScreen",
+	"width": 500,
+	"height": 440,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 27,
+					"left": 223,
+					"width": 253,
+					"height": 17,
+					"dataSource": "Form:C1466.CompanyName",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 76,
+					"left": 223,
+					"width": 253,
+					"height": 17,
+					"dataSource": "Form:C1466.LastName",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 125,
+					"left": 223,
+					"width": 253,
+					"height": 17,
+					"dataSource": "Form:C1466.FirstName",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 175,
+					"left": 223,
+					"width": 253,
+					"height": 17,
+					"dataSource": "Form:C1466.AddressLine1",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 225,
+					"left": 223,
+					"width": 253,
+					"height": 17,
+					"dataSource": "Form:C1466.AddressLine2",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 275,
+					"left": 223,
+					"width": 253,
+					"height": 17,
+					"dataSource": "Form:C1466.ZipCode",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 325,
+					"left": 223,
+					"width": 253,
+					"height": 17,
+					"dataSource": "Form:C1466.City",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 375,
+					"left": 223,
+					"width": 253,
+					"height": 17,
+					"dataSource": "Form:C1466.Country",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 448,
+					"left": 662,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Buttons_13",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 27,
+					"left": 14,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.Label.CompanyName",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 76,
+					"left": 14,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.Label.LastName",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 124,
+					"left": 14,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.Label.FirstName",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 175,
+					"left": 14,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.Label.AddressLine1",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 225,
+					"left": 14,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.Label.AddressLine2",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 274,
+					"left": 14,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.Label.ZipCode",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 325,
+					"left": 14,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.Label.City",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 375,
+					"left": 14,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.Label.Country",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 51,
+					"left": 31,
+					"width": 183,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.Label.CompanyName"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 100,
+					"left": 69,
+					"width": 145,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.Label.LastName"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 150,
+					"left": 69,
+					"width": 145,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.Label.FirstName"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 199,
+					"left": 26,
+					"width": 188,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.Label.AddressLine1"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 249,
+					"left": 38,
+					"width": 176,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.Label.AddressLine2"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 299,
+					"left": 84,
+					"width": 130,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.Label.ZipCode"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 349,
+					"left": 96,
+					"width": 118,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.Label.City"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 400,
+					"left": 89,
+					"width": 125,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.Label.Country"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 51,
+					"left": 291,
+					"width": 185,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.CompanyName"
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 100,
+					"left": 291,
+					"width": 185,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.LastName"
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 150,
+					"left": 291,
+					"width": 185,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.FirstName"
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 199,
+					"left": 291,
+					"width": 185,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.AddressLine1"
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 249,
+					"left": 291,
+					"width": 185,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.AddressLine2"
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 299,
+					"left": 291,
+					"width": 185,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.ZipCode"
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 349,
+					"left": 291,
+					"width": 185,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.City"
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 400,
+					"left": 291,
+					"width": 185,
+					"height": 17,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"text": "Form.Country"
+				}
+			}
+		}
+	]
+}

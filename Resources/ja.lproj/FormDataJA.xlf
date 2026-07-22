@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v16" source-language="en-US" target-language="ja">
+    <header>
+      <note/>
+    </header>
+    <body>
+
+        <!-- Work Area -->
+<group resname="[ProjectForm]">
+<group resname="HDI">
+<trans-unit id="1" resname="BtnDemo">
+<source>Demo</source>
+<target>スタート</target>
+</trans-unit>
+<trans-unit id="2" resname="TxtVersion">
+<source>{version} and above</source>
+<target>{version} 以降...</target>
+</trans-unit>
+<trans-unit id="3" resname="labelVersion">
+<source>Version:</source>
+<target>バージョン:</target>
+</trans-unit>
+<trans-unit id="4" resname="labelBlog">
+<source>Blog:</source>
+<target>Blog:</target>
+</trans-unit>
+<trans-unit id="5" resname="labelInfo">
+<source>Info:</source>
+<target>概要:</target>
+</trans-unit>
+<trans-unit id="6" resname="txtTitle">
+<source>• title •</source>
+<target>• title •</target>
+</trans-unit>
+<trans-unit id="7" resname="Text">
+<source>How do I…</source>
+<target>どうやって...</target>
+</trans-unit>
+<trans-unit id="8" resname="ErrorMainText">
+<source>Sorry, this "How do I" (HDI) example must
+be used with a newer version of 4D
+({version} and above)</source>
+<target>申し訳ありません。この"How do I..." (HDI) サンプルは、より新しいバージョンの4D（{version} 以降）で開く必要があります。</target>
+</trans-unit>
+<trans-unit id="9" resname="ErrorSubText">
+<source>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+<target>このHDIをデザインモードで開かないでください。
+開いてしまった場合、フォームやメソッドが不完全になってしまう恐れがあります。</target>
+</trans-unit>
+</group>
+<group resname="HDI2">
+<trans-unit id="1" resname="Text1">
+<source>Edit_Address Form (in design)</source>
+<target>Edit_Address フォーム (デザインモード)</target>
+</trans-unit>
+<trans-unit id="2" resname="Text6">
+<source>The object is passed to the DIALOG command</source>
+<target>請求先住所オブジェクトは DIALOG コマンドに受け渡されます</target>
+</trans-unit>
+<trans-unit id="3" resname="Text11">
+<source>Invoice Address #1</source>
+<target>請求先住所 #1</target>
+</trans-unit>
+<trans-unit id="4" resname="Text12">
+<source>Invoice Address #2</source>
+<target>請求先住所 #2</target>
+</trans-unit>
+<trans-unit id="5" resname="Button3">
+<source>Edit Address #2</source>
+<target>住所#2 を編集する</target>
+</trans-unit>
+<trans-unit id="6" resname="Button4">
+<source>Edit Address #1</source>
+<target>住所#1 を編集する</target>
+</trans-unit>
+<trans-unit id="7" resname="RES_label">
+<source>Updated object after modification by the user in the dialog</source>
+<target>ダイアログにてユーザーが編集した後の、更新された請求先住所オブジェクト</target>
+</trans-unit>
+<trans-unit id="8" resname="Text2">
+<source>It’s now possible to pass parameters in an object to a form using the DIALOG command. 
+Any property of this object will then be available from within the form context via the Form command.</source>
+<target>DIALOGコマンドのパラメーターにオブジェクトを渡すことができるようになりました。
+受け渡したオブジェクトは、フォームのコンテキストにおいて Form コマンドを介して使用することができます。</target>
+</trans-unit>
+<trans-unit id="9" resname="RES_Text">
+<source>When the users close the dialog, the values they entered are available in the calling method via the object passed in parameter.</source>
+<target>親メソッドとフォーム上の両方で同じオブジェクトを参照しているため、編集内容は呼び出し元でも有効です。</target>
+</trans-unit>
+<trans-unit id="10" resname="Bouton image">
+<source>Bouton</source>
+<target>ボタン</target>
+</trans-unit>
+<trans-unit id="11" resname="Bouton image1">
+<source>Bouton</source>
+<target>ボタン</target>
+</trans-unit>
+<trans-unit id="12" resname="Texte2">
+<source>Click on flags to change language in subforms:</source>
+<target>サブフォームの言語を変更するには国旗をクリックします:</target>
+</trans-unit>
+<trans-unit id="13" resname="Text">
+<source>InvoiceAddress.Label:=Address_FR 
+</source>
+<target>InvoiceAddress.Label:=Address_FR 
+</target>
+</trans-unit>
+<trans-unit id="14" resname="Text5">
+<source>InvoiceAddress.Label:=Address_EN 
+ </source>
+<target>InvoiceAddress.Label:=Address_EN 
+ </target>
+</trans-unit>
+<trans-unit id="15" resname="Text7">
+<source>InvoiceAddress is accessible in the subform using the Form command</source>
+<target>サブフォーム内では、Form コマンドを介して InvoiceAddress にアクセスできます。</target>
+</trans-unit>
+<trans-unit id="16" resname="Text18">
+<source>InvoiceAddress is a C_Object variable bound to the subform below</source>
+<target>InvoiceAddress は、下のサブフォームに紐づいている C_Object 変数です。</target>
+</trans-unit>
+<trans-unit id="17" resname="Text19">
+<source>InvoiceAddress object content:</source>
+<target>InvoiceAddress オブジェクトの中身:</target>
+</trans-unit>
+<trans-unit id="18" resname="Text22">
+<source>When you update the Label object, the subform is updated automatically </source>
+<target>Label オブジェクトを変更すると、サブフォームにもすぐに反映されます。 </target>
+</trans-unit>
+</group>
+<group resname="Edit_Address">
+<trans-unit id="1" resname="Button1">
+<source>OK</source>
+<target>OK</target>
+</trans-unit>
+<trans-unit id="2" resname="Texte">
+<source>Company</source>
+<target>Company</target>
+</trans-unit>
+<trans-unit id="3" resname="Texte1">
+<source>LastName</source>
+<target>LastName</target>
+</trans-unit>
+<trans-unit id="4" resname="Texte3">
+<source>FirstName</source>
+<target>FirstName</target>
+</trans-unit>
+<trans-unit id="5" resname="Texte4">
+<source>AddressLine1</source>
+<target>AddressLine1</target>
+</trans-unit>
+<trans-unit id="6" resname="Texte5">
+<source>AddressLine2</source>
+<target>AddressLine2</target>
+</trans-unit>
+<trans-unit id="7" resname="Texte6">
+<source>ZipCode</source>
+<target>ZipCode</target>
+</trans-unit>
+<trans-unit id="8" resname="Texte7">
+<source>City</source>
+<target>City</target>
+</trans-unit>
+<trans-unit id="9" resname="Texte8">
+<source>Country</source>
+<target>Country</target>
+</trans-unit>
+<trans-unit id="10" resname="Text17">
+<source>Thanks to the new Form command, the object passed in the parameter to the DIALOG command will be updated with the values entered by the user.</source>
+<target>Form コマンドを使うことで、DIALOG コマンドに受け渡したオブジェクトを直接編集することができます。</target>
+</trans-unit>
+</group>
+</group>
+
+
+
+    </body>
+  </file>
+</xliff>
