@@ -1,5 +1,5 @@
-C_OBJECT:C1216(InvoiceAddress)
-C_OBJECT:C1216(DeliveryAddress)
+var InvoiceAddress : Object
+var DeliveryAddress : Object
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)
