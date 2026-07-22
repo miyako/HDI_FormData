@@ -1,6 +1,6 @@
 # HDI_FormData
 
-A 4D v17 **HDI** (How Do I) binary database demonstrating `Form` and `DIALOG`, converted to a 4D project using 4D 21. The codebase was then updated and cleaned up with the help of **GitHub Copilot**.
+A 4D v17 **HDI** (How Do I) binary database demonstrating simplifyied communications with forms, converted to a 4D project using 4D 21. The codebase was then updated and cleaned up with the help of **GitHub Copilot**.
 
 ## Origin
 
