@@ -132,6 +132,38 @@ File names **must** include a capitalised language code suffix before the extens
 
 ---
 
+### XLIFF grouping: object-name-based vs. ID-based syntax
+
+XLIFF files support two resolution mechanisms, and they **must not be mixed within the same `<group>`**:
+
+1. **Object-name-based (automatic form localisation)** — `<trans-unit>` elements are nested inside `<group resname="[ProjectForm]"> → <group resname="{FormName}">`. The `resname` on each `<trans-unit>` matches a form object name. 4D resolves these automatically by form/object path.
+
+2. **ID-based (`:xliff:` references)** — Standalone `<trans-unit>` elements at the `<body>` level (not inside a `[ProjectForm]` group). The `resname` is an arbitrary ID referenced via `:xliff:resname` in JSON or `Localized string:C991("resname")` in code.
+
+```xml
+<body>
+  <!-- Object-name-based: grouped by form -->
+  <group resname="[ProjectForm]">
+    <group resname="HDI2">
+      <trans-unit id="1" resname="Text1">
+        <source>Edit_Address Form (in design)</source>
+        <target>…</target>
+      </trans-unit>
+    </group>
+  </group>
+
+  <!-- ID-based: standalone at body level -->
+  <trans-unit resname="TabDescription">
+    <source>Description</source>
+    <target>…</target>
+  </trans-unit>
+</body>
+```
+
+> **Mistake to avoid:** Do not place ID-based entries (e.g. tab label IDs like `TabDescription`) inside an object-name-based `<group resname="{FormName}">`. They will not resolve correctly via `:xliff:` references because 4D treats entries inside form groups as object-name matches, not ID lookups.
+
+---
+
 ## What to Localise
 
 ### 1. Menus (`Sources/menus.json`)

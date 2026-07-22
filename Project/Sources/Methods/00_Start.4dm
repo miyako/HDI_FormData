@@ -9,7 +9,7 @@ Case of
 	: (Count parameters:C259=0)
 		
 		If (Application version:C493<"1650")  // 16R5
-			ALERT:C41("申し訳ありません。この \"How do I\" (HDI) サンプルは、より新しいバージョンの4D (v17 以降) で開く必要があります。"; "Quit")
+			ALERT:C41(Get localized string:C991("AlertVersionError"); "Quit")
 			QUIT 4D:C291
 		Else 
 			$ps:=New process:C317(Current method name:C684; 0; Current method name:C684; 0)
@@ -27,10 +27,10 @@ Case of
 		
 		$options:=New object:C1471
 		
-		$options.title:="… ダイアログやサブフォームに引数を渡せばいいの？"
+		$options.title:=Get localized string:C991("HDITitle")
 		
 		$options.blog:="blog.4d.com"
-		$options.info:="ランゲージ拡張"  //ex : "4D View Pro feature"
+		$options.info:=Get localized string:C991("HDIInfo")  //ex : "4D View Pro feature"
 		
 		$options.minimumVersion:="1700"  // 1650 means 16R5   1601 means 16.1 (do not use !)
 		
