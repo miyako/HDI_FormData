@@ -126,7 +126,7 @@
 					"dataSource": "[Samples:4]Label:2",
 					"fontFamily": "Segoe UI",
 					"fontSize": 12,
-					"fill": "#FFFFFF",
+					"class": "fieldBackground",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -148,7 +148,7 @@
 					"top": 2,
 					"left": 69,
 					"height": 46,
-					"stroke": "#A8A8A8"
+					"class": "separatorLine"
 				},
 				"Splitter2": {
 					"type": "splitter",

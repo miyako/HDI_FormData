@@ -306,7 +306,7 @@
 					"left": 31,
 					"width": 183,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.Label.CompanyName"
@@ -317,7 +317,7 @@
 					"left": 69,
 					"width": 145,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.Label.LastName"
@@ -328,7 +328,7 @@
 					"left": 69,
 					"width": 145,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.Label.FirstName"
@@ -339,7 +339,7 @@
 					"left": 26,
 					"width": 188,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.Label.AddressLine1"
@@ -350,7 +350,7 @@
 					"left": 38,
 					"width": 176,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.Label.AddressLine2"
@@ -361,7 +361,7 @@
 					"left": 84,
 					"width": 130,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.Label.ZipCode"
@@ -372,7 +372,7 @@
 					"left": 96,
 					"width": 118,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.Label.City"
@@ -383,7 +383,7 @@
 					"left": 89,
 					"width": 125,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.Label.Country"
@@ -394,7 +394,7 @@
 					"left": 291,
 					"width": 185,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.CompanyName"
@@ -405,7 +405,7 @@
 					"left": 291,
 					"width": 185,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.LastName"
@@ -416,7 +416,7 @@
 					"left": 291,
 					"width": 185,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.FirstName"
@@ -427,7 +427,7 @@
 					"left": 291,
 					"width": 185,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.AddressLine1"
@@ -438,7 +438,7 @@
 					"left": 291,
 					"width": 185,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.AddressLine2"
@@ -449,7 +449,7 @@
 					"left": 291,
 					"width": 185,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.ZipCode"
@@ -460,7 +460,7 @@
 					"left": 291,
 					"width": 185,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.City"
@@ -471,7 +471,7 @@
 					"left": 291,
 					"width": 185,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"textAlign": "right",
 					"fontStyle": "italic",
 					"text": "Form.Country"

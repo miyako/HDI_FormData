@@ -165,7 +165,7 @@
 					"height": 26,
 					"text": "Edit Address #2",
 					"fontWeight": "bold",
-					"stroke": "#89C705",
+					"class": "accentGreen",
 					"focusable": false,
 					"method": "ObjectMethods/Button3.4dm",
 					"events": [
@@ -180,7 +180,7 @@
 					"height": 26,
 					"text": "Edit Address #1",
 					"fontWeight": "bold",
-					"stroke": "#FF9300",
+					"class": "accentOrange",
 					"focusable": false,
 					"method": "ObjectMethods/Button4.4dm",
 					"events": [

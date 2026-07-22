@@ -24,3 +24,24 @@
 	font-weight: bold;
 }
 
+/* ---------- Windows dark mode overrides ---------- */
+@media (prefers-color-scheme: dark) {
+
+	.secondaryText {
+		stroke: #A0A0A0;
+	}
+
+	.linkText {
+		stroke: #4CC2FF;
+	}
+
+	.panelBackground {
+		fill: #2D2D2D;
+	}
+
+	.fieldBackground {
+		fill: #1E1E1E;
+	}
+
+}
+
