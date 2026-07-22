@@ -31,9 +31,9 @@
 					"dataSource": "TabControl",
 					"dataSourceTypeHint": "arrayText",
 					"labels": [
-						"説明",
+						":xliff:TabDescription",
 						"DIALOG",
-						"サブフォーム"
+						":xliff:TabSubform"
 					],
 					"action": "GotoPage",
 					"events": [
