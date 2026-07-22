@@ -1,7 +1,7 @@
 If (FORM Event:C1606.code=On Clicked:K2:4)
 	
 	If (Form:C1466.quit)
-		INVOKE ACTION:C1354(ak return to design mode:K39:43)
+		INVOKE ACTION(ak return to design mode)
 	Else 
 		
 		var $window : Integer
