@@ -1,5 +1,5 @@
 //%attributes = {}
-#DECLARE($1 : Integer)
+#DECLARE($flag : Integer)
 
 var $ps; $win : Integer
 var $options : Object
