@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Dark mode support using prefers-color-scheme media queries.
+   Colors adapt automatically based on the OS appearance setting.
+   ========================================================================== */
+
+/* ---------- Light mode ---------- */
+@media (prefers-color-scheme: light) {
+
+	.secondaryText {
+		stroke: #696969;
+	}
+
+	.linkText {
+		stroke: #1E90FF;
+	}
+
+	.accentGreen {
+		stroke: #89C705;
+	}
+
+	.accentOrange {
+		stroke: #FF9300;
+	}
+
+	.panelBackground {
+		fill: #C0C0C0;
+	}
+
+	.fieldBackground {
+		fill: #FFFFFF;
+	}
+
+	.separatorLine {
+		stroke: #A8A8A8;
+	}
+
+}
+
+/* ---------- Dark mode ---------- */
+@media (prefers-color-scheme: dark) {
+
+	.secondaryText {
+		stroke: #A0A0A0;
+	}
+
+	.linkText {
+		stroke: #6CB4EE;
+	}
+
+	.accentGreen {
+		stroke: #A8D86A;
+	}
+
+	.accentOrange {
+		stroke: #FFB347;
+	}
+
+	.panelBackground {
+		fill: #3A3A3C;
+	}
+
+	.fieldBackground {
+		fill: #2C2C2E;
+	}
+
+	.separatorLine {
+		stroke: #58585A;
+	}
+
+}

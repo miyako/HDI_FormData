@@ -37,7 +37,7 @@
 					"left": 0,
 					"width": 724,
 					"height": 364,
-					"fill": "#C0C0C0",
+					"class": "panelBackground",
 					"stroke": "transparent"
 				}
 			}
@@ -84,7 +84,7 @@
 					"left": 130,
 					"width": 300,
 					"height": 17,
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"text": "{version} and above"
 				},
 				"labelVersion": {
@@ -93,7 +93,7 @@
 					"left": 20,
 					"width": 100,
 					"height": 17,
-					"stroke": "#212121",
+					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
 					"text": "Version:"
@@ -104,7 +104,7 @@
 					"left": 20,
 					"width": 100,
 					"height": 17,
-					"stroke": "#212121",
+					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
 					"text": "Blog:"
@@ -115,7 +115,7 @@
 					"left": 20,
 					"width": 100,
 					"height": 17,
-					"stroke": "#212121",
+					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
 					"text": "Info:"
@@ -127,7 +127,7 @@
 					"width": 300,
 					"height": 17,
 					"dataSource": "Form:C1466.blog",
-					"stroke": "#1E90FF",
+					"class": "linkText",
 					"textDecoration": "underline",
 					"focusable": false,
 					"fill": "transparent",
@@ -147,7 +147,7 @@
 					"width": 300,
 					"height": 17,
 					"dataSource": "Form:C1466.info",
-					"stroke": "#696969",
+					"class": "secondaryText",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -173,7 +173,7 @@
 					"left": 160,
 					"width": 544,
 					"height": 22,
-					"stroke": "#212121",
+					"stroke": "automatic",
 					"textAlign": "left",
 					"fontFamily": "System Font",
 					"fontSize": 18,
@@ -185,7 +185,7 @@
 					"left": 160,
 					"width": 544,
 					"height": 37,
-					"stroke": "#212121",
+					"stroke": "automatic",
 					"textAlign": "left",
 					"fontFamily": "System Font",
 					"fontSize": 30,

@@ -24,3 +24,24 @@
 	font-weight: bold;
 }
 
+/* ---------- macOS dark mode overrides ---------- */
+@media (prefers-color-scheme: dark) {
+
+	.secondaryText {
+		stroke: #98989D;
+	}
+
+	.linkText {
+		stroke: #64D2FF;
+	}
+
+	.panelBackground {
+		fill: #38383A;
+	}
+
+	.fieldBackground {
+		fill: #1C1C1E;
+	}
+
+}
+
