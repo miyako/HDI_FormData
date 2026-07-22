@@ -24,40 +24,23 @@ Each branch represents a distinct modernisation effort, guided by a correspondin
 
 ## Copilot Token Usage
 
-All sessions used **Claude Opus 4.6** via GitHub Copilot.
+Actual per-session token usage, pulled from Copilot session records.
 
-| Session | Input Tokens | Output Tokens | Turns |
-|---------|-------------:|--------------:|------:|
-| Sync main with origin | 7,147,562 | 20,999 | 116 |
-| XLIFF localisation | 4,787,225 | 24,720 | 80 |
-
-### Model Selection Guidance
-
-| Session | Turns | Why cheaper works |
-|---|---|---|
-| **Token usage summary** | 13 | Pure data retrieval/reporting — Haiku 4.5 is fine |
-| **Sync main with origin** | 116 | Git operations, no complex reasoning — Sonnet 5 |
-| **Replace m_quit with quit action** | 23 | Mechanical rename/refactor — Sonnet 5 |
-| **Hide subroutine methods** | 17 | Targeted, well-scoped code edit — Sonnet 5 |
-
-### Borderline (Sonnet 5 likely sufficient):
-
-| Session | Turns | Notes |
-|---|---|---|
-| **Liquid glass buttons** | 18 | UI styling — Sonnet handles CSS/UI well |
-| **Disable truncate ellipsis** | 58 | Focused change, many turns suggest iteration — Sonnet |
-
-### Mode Selection Guidance
-
-**Interactive was the right call for most of these.** Many sessions had mid-stream corrections (wrong 4D command names, missed requirements, URL fixes). The XLIFF session (19 turns), modernise session (15 turns), and sync/setup session (25 turns) all needed real-time steering — autopilot would have gone off-track.
-
-**Now with documented instructions, these types are autopilot-ready:**
-- Simple property changes ("disable truncate ellipsis", "liquid glass buttons", "hide subroutine methods") — clear spec, mechanical edits
-- "Replace m_quit with quit action" — well-scoped refactor
-- PR creation / session summaries — formulaic end-of-session steps
-
-**Plan mode would have helped with:**
-- **XLIFF localisation** — complex multi-file task where the agent missed capitalised language codes and used wrong command names. A plan review would have caught scope issues before execution.
+| Session | Branch | Model(s) | Input Tokens | Output Tokens | Turns |
+|---------|--------|----------|-------------:|--------------:|------:|
+| Add untracked project files | `miyako-glowing-funicular` | Claude Opus 4.6 | 376,155 | 996 | 7 |
+| Fix c_object syntax error | `miyako-fix-c-object-syntax-error` | Claude Opus 4.6 | 3,334,377 | 14,968 | 48 |
+| Add Branches section to README | `miyako-add-branches-to-readme` | Claude Sonnet 5 | 591,373 | 2,299 | 13 |
+| Sync main branches | *(no dedicated branch)* | Claude Opus 4.6, Claude Sonnet 5 | 821,737 | 2,919 | 22 |
+| Replace menu method wrappers | `miyako-replace-menu-method-wrappers` | Claude Sonnet 5 | 866,373 | 5,067 | 17 |
+| XLIFF localisation | `miyako-xliff-localization` | Claude Opus 4.6 | 2,238,032 | 14,665 | 40 |
+| Hide subroutines from Run Method dialog | `miyako-reimagined-umbrella` | Claude Sonnet 5 | 1,052,029 | 6,830 | 20 |
+| Modernise startup dialog | `miyako-modernise-startup-dialog` | Claude Opus 4.6 | 5,239,027 | 23,743 | 58 |
+| Dark mode support | `miyako-dark-mode-support` | Claude Opus 4.6 | 3,562,636 | 17,024 | 48 |
+| Update README branches (chat) | *(no dedicated branch)* | Claude Opus 4.6 | 863,169 | 6,100 | 24 |
+| Update Branches table | `miyako-update-readme-branches-table` | Claude Sonnet 5 | 608,436 | 3,399 | 13 |
+| Add token usage section | `miyako-supreme-fiesta` | Claude Sonnet 5 | 1,059,388 | 6,008 | 21 |
+| **Total** | | | **20,612,732** | **104,018** | **331** |
 
 ## Screenshots
 
